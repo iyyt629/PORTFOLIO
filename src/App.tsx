@@ -503,7 +503,11 @@ function Section1() {
         {[
           { title: "技术向产品海报", count: 6 },
           { title: "创意联名海报", count: 4 },
-          { title: "品牌节气创意海报", count: 5 },
+          { 
+            title: "品牌节气创意海报", 
+            customImages: ["/photo17.jpeg", "/photo18.jpeg", "/photo19.jpeg", "/photo20.jpeg", "/photo21.jpeg"],
+            count: 5 
+          },
           { title: "风格化系列海报", count: 6 },
           { 
             title: "其他创意海报", 
