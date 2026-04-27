@@ -16,26 +16,26 @@ const portfolioFeatures = [
     link: "https://mp.weixin.qq.com/s/3uV8k0RYHAj-AMu0s92xpg",
     secondaryLink: { title: "相似案例（小米壁画电视）", url: "https://www.mi.com/arttv?cfrom=search" },
     strategyId: "strategy-visual",
-    image: "/photo3.jpeg"
+    image: "photo3.jpeg"
   },
   { 
     title: "超大屏电视新品 内容构建", 
     desc: "统筹大屏产品矩阵包装与传播。聚焦“空间体验”定制差异化卖点，打破尺寸认知壁垒，助力业务高效转化。",
     link: "https://www.mi.com/redmitv/98?client_id=180100",
     strategyId: "strategy-selling",
-    image: "/photo4.jpg"
+    image: "photo4.jpg"
   },
   { 
     title: "小米首款超高端OLED电视 技术点传达", 
     desc: "深度解构显示技术，以“大师级”心智驱动全链路创意。将硬核参数转化为场景价值，实现技术降维传达。", 
     link: "https://mp.weixin.qq.com/s/kKvpj79Q5FJWdy8TgES7IA",
-    image: "/photo5.jpeg"
+    image: "photo5.jpeg"
   },
   { 
     title: "MIUI for TV 3.0 上线 用户沟通", 
     desc: "主导MIUI for TV 3.0体验化拆解。通过动态创意演绎交互优势，将系统实力具象化为用户感知的品牌软实力。", 
     link: "https://mp.weixin.qq.com/s/9fnfod8wuKcRB5oom8sswA",
-    image: "/photo6.jpg"
+    image: "photo6.jpg"
   }
 ];
 
@@ -355,7 +355,7 @@ function HeroProfile() {
           <div className="absolute inset-4 right-4 lg:right-12 bottom-12 rounded-[2.5rem] overflow-hidden border-[6px] border-white/90 shadow-2xl z-10 group bg-slate-100">
              <div className="absolute inset-0 bg-gradient-to-t from-[#0052D9]/80 via-[#0052D9]/10 to-transparent z-10 mix-blend-multiply opacity-80 group-hover:opacity-40 transition-opacity duration-700"></div>
              {/* 替换为图片1 */}
-             <img src="/photo1.jpg" onError={(e) => { e.currentTarget.src = "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=800&auto=format&fit=crop"; }} alt="Creative Director Portrait" className="w-full h-full object-cover object-center group-hover:scale-110 transition-all duration-1000" />
+             <img src="photo1.jpg" onError={(e) => { e.currentTarget.src = "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=800&auto=format&fit=crop"; }} alt="Creative Director Portrait" className="w-full h-full object-cover object-center group-hover:scale-110 transition-all duration-1000" />
              <div className="absolute bottom-8 left-8 z-20">
                <p className="text-white font-black text-4xl tracking-tight leading-none drop-shadow-lg mb-1">内容创意</p>
                <p className="text-white/90 font-bold text-sm tracking-[0.2em] uppercase drop-shadow-md">Creative Strategist</p>
@@ -369,7 +369,7 @@ function HeroProfile() {
           <div className="absolute -bottom-6 right-0 lg:-right-6 w-[340px] lg:w-[400px] z-30 bg-white/90 backdrop-blur-3xl p-4 lg:p-5 rounded-[2.5rem] shadow-[0_32px_80px_rgba(0,82,217,0.18)] border border-white flex flex-row items-start">
              {/* 抠出的人像 (图片2) 放在左侧空白处 */}
              <div className="w-[16%] ml-4 mt-1 pointer-events-none relative z-20 flex-shrink-0 overflow-visible">
-               <img src="/photo2.png" 
+               <img src="photo2.png" 
                     onError={(e) => { e.currentTarget.style.display = 'none'; }} 
                     alt="Creative Portrait" 
                     className="w-full h-auto object-contain drop-shadow-[0_8px_30px_rgba(0,82,217,0.1)] [mask-image:linear-gradient(to_bottom,black_95%,transparent)]" />
@@ -423,7 +423,7 @@ function SectionProjectPlanning() {
             <h4 className="text-lg font-bold text-tencent-dark mb-2">系列新品传播策划全案</h4>
             <p className="text-xs text-tencent-gray mb-6 leading-relaxed">覆盖全渠道新品上市传播策略，包含核心心智提炼、媒介矩阵排期与内容生产工作流。</p>
             <a 
-              href="/75英寸新品传播内容策划全案.pdf" 
+              href="75英寸新品传播内容策划全案.pdf" 
               target="_blank" 
               className="bg-[#0052D9] hover:bg-[#003CAB] text-white px-5 py-2.5 rounded-full font-bold transition-all shadow-lg shadow-blue-500/20 inline-flex items-center gap-2 text-[11px]"
             >
@@ -440,7 +440,7 @@ function SectionProjectPlanning() {
             <h4 className="text-lg font-bold text-tencent-dark mb-2">高端产品发布项目案</h4>
             <p className="text-xs text-tencent-gray mb-6 leading-relaxed">品牌大师系列（OLED/大师版）高端产品线全案策划，深耕顶奢认知与极致科技品牌溢价。</p>
             <a 
-              href="/大师至尊纪念版电视发布方案.pdf" 
+              href="大师至尊纪念版电视发布方案.pdf" 
               target="_blank" 
               className="bg-[#0052D9] hover:bg-[#003CAB] text-white px-5 py-2.5 rounded-full font-bold transition-all shadow-lg shadow-blue-500/20 inline-flex items-center gap-2 text-[11px]"
             >
@@ -505,19 +505,19 @@ function Section1() {
           { title: "创意联名海报", count: 4 },
           { 
             title: "品牌节气创意海报", 
-            customImages: ["/photo17.jpeg", "/photo18.jpeg", "/photo19.jpeg", "/photo20.jpeg", "/photo21.jpeg"],
+            customImages: ["photo17.jpeg", "photo18.jpeg", "photo19.jpeg", "photo20.jpeg", "photo21.jpeg"],
             count: 5 
           },
           { title: "风格化系列海报", count: 6 },
           { 
             title: "其他创意海报", 
             customImages: [
-              "/photo40.jpeg", 
-              "/photo41.jpeg", 
-              "/photo42.jpeg", 
-              "/photo28.jpeg", 
-              "/photo29.jpeg", 
-              "/photo30.jpeg"
+              "photo40.jpeg", 
+              "photo41.jpeg", 
+              "photo42.jpeg", 
+              "photo28.jpeg", 
+              "photo29.jpeg", 
+              "photo30.jpeg"
             ] 
           }
         ].reduce(({ rows, nextId }, cat: any) => {
@@ -525,7 +525,7 @@ function Section1() {
             ? cat.customImages.map((img: string) => ({ title: cat.title, img }))
             : Array.from({ length: cat.count }).map((_, i) => ({
               title: cat.title,
-              img: `/photo${nextId + i}.jpeg`
+              img: `photo${nextId + i}.jpeg`
             }));
           return { 
             rows: [...rows, { title: cat.title, items: rowItems }], 
@@ -625,7 +625,7 @@ function Section1() {
               <MediaCard 
                 key={i} 
                 type="video" 
-                src={i === 3 ? "/video7-1.mp4" : `/video${i+4}.mp4`} 
+                src={i === 3 ? "video7-1.mp4" : `video${i+4}.mp4`} 
                 alt={`短视频 ${i+1}`}
                 caption={caption}
                 className="w-[140px] md:w-[180px] shrink-0 snap-center first:ml-0 shadow-sm border border-slate-100 hover:shadow-md transition-shadow"
@@ -643,9 +643,9 @@ const promoVideos = [
   {
     title: "小米壁画电视创意宣传片",
     desc: "将壁画电视【形态与智能】2个主要方面的卖点通过创意设计为若干趣味创意生活小场景。该宣传片及其切片共获得1000w+自然播放量，在用户中迅速传播、广受好评，助力首款高端产品上线当天即售罄。",
-    images: ["/photo54.jpg"],
+    images: ["photo54.jpg"],
     videoUrl: "https://weibo.com/tv/show/1034:4364651774063904?from=old_pc_videoshow",
-    previewUrl: "/video21.mp4",
+    previewUrl: "video21.mp4",
     imageAspectRatio: "aspect-[1605/714]",
     imageObjectFit: "object-contain"
 
@@ -654,13 +654,13 @@ const promoVideos = [
     title: "小米电视印度宣传片",
     desc: "通过戏剧性创意情节设置，植入小米电视富有竞争力的价值点，在印度市场爆火，播放量1.3亿。",
     videoUrl: "https://v.douyin.com/g5GxlVtQU8A/",
-    previewUrl: "/video2.mp4"
+    previewUrl: "video2.mp4"
   },
   {
     title: "小米电视5系列幕后纪录片",
     desc: "通过视觉场景设计与不同采访切入点，以幕后不同身份的工作人员口吻表现产品打磨过程的投入与用心，塑造品牌及技术团队形象。",
     videoUrl: "https://weibo.com/tv/show/1034:4435600108157444?from=old_pc_videoshow",
-    previewUrl: "/video3.mp4"
+    previewUrl: "video3.mp4"
   }
 ];
 
@@ -706,10 +706,10 @@ function Section2() {
             <div className="max-w-xl mx-auto space-y-4">
               <div className="grid grid-cols-4 gap-3">
                 {[
-                  "/photo48.jpg",
-                  "/photo49.jpg",
-                  "/photo50.jpg",
-                  "/photo51.jpg",
+                  "photo48.jpg",
+                  "photo49.jpg",
+                  "photo50.jpg",
+                  "photo51.jpg",
                 ].map((src, i) => (
                   <MediaCard 
                     key={i} 
@@ -724,7 +724,7 @@ function Section2() {
               <div className="space-y-4">
                 <MediaCard 
                   type="image" 
-                  src="/photo52.jpg" 
+                  src="photo52.jpg" 
                   alt="AIGC 海报 5"
                   className="w-full !bg-white/10 !border-white/10 shadow-none !rounded-xl"
                   mediaContainerClassName="aspect-[2834/945]"
@@ -732,7 +732,7 @@ function Section2() {
                 <div className="space-y-2">
                   <MediaCard 
                     type="image" 
-                    src="/photo53.png" 
+                    src="photo53.png" 
                     alt="AIGC 海报 6"
                     className="w-full !bg-white/10 !border-white/10 shadow-none !rounded-xl"
                     mediaContainerClassName="aspect-video"
@@ -801,7 +801,7 @@ function Section2() {
           <div className="mt-auto">
             <MediaCard 
               type="image" 
-              src="/photo55.jpg" 
+              src="photo55.jpg" 
               alt="AIGC 全流程生产工作流"
               className="w-full !bg-slate-50 !border-slate-100 !rounded-xl !shadow-none"
               mediaContainerClassName="aspect-video"
@@ -871,7 +871,7 @@ function Section3() {
         <div className="max-w-4xl mx-auto space-y-6 mb-12">
           {/* Row 1: 2 shorter cards */}
           <div className="grid grid-cols-2 gap-4">
-            {['/photo34.jpeg', '/photo35.jpeg'].map((src, i) => (
+            {['photo34.jpeg', 'photo35.jpeg'].map((src, i) => (
                <MediaCard 
                 key={`row1-${i}`} 
                 type="image" 
@@ -886,7 +886,7 @@ function Section3() {
 
           {/* Row 2: 3 shorter cards */}
           <div className="grid grid-cols-3 gap-4">
-            {['/photo36.jpeg', '/photo37.jpeg', '/photo38.jpeg'].map((src, i) => (
+            {['photo36.jpeg', 'photo37.jpeg', 'photo38.jpeg'].map((src, i) => (
                <MediaCard 
                 key={`row2-${i}`} 
                 type="image" 
@@ -905,7 +905,7 @@ function Section3() {
           <div className="space-y-6">
             <MediaCard 
               type="video" 
-              src="/video10.mp4" 
+              src="video10.mp4" 
               alt="透明电视动态案例 1"
               caption="视频案例: 科技感动态演示"
               className="w-full"
@@ -914,7 +914,7 @@ function Section3() {
             />
             <MediaCard 
               type="video" 
-              src="/video11.mp4" 
+              src="video11.mp4" 
               alt="透明电视动态案例 2"
               caption="视频案例: 交互效果演示"
               className="w-full"
@@ -924,7 +924,7 @@ function Section3() {
           </div>
           <MediaCard 
             type="image" 
-            src="/photo39.jpeg" 
+            src="photo39.jpeg" 
             alt="透明电视案例 3"
             caption="核心画质参数：10.7亿色原色屏"
             className="w-full"
@@ -985,7 +985,7 @@ function Section3() {
           <div className="flex flex-col gap-6">
             <MediaCard 
               type="image" 
-              src="/photo43.jpeg" 
+              src="photo43.jpeg" 
               alt="大屏案例 1"
               caption="“大”的体感化表达1"
               className="w-full"
@@ -993,7 +993,7 @@ function Section3() {
             />
             <MediaCard 
               type="image" 
-              src="/photo44.jpeg" 
+              src="photo44.jpeg" 
               alt="大屏案例 2"
               caption="“大”的体感化表达2"
               className="w-full"
@@ -1003,7 +1003,7 @@ function Section3() {
           <div className="flex items-start">
             <MediaCard 
               type="image" 
-              src="/photo45.jpeg" 
+              src="photo45.jpeg" 
               alt="大屏案例 3"
               caption="UGC活动"
               className="w-[200px] md:w-[280px]"
@@ -1016,7 +1016,7 @@ function Section3() {
           {/* Row 1: 3 x 16:9 videos */}
           <HorizontalScroll className="-mx-6 px-6 md:mx-0 md:px-0">
             <div className="flex gap-6">
-               {["/video12.mp4", "/video13.mp4", "/video14.mp4"].map((v, i) => (
+               {["video12.mp4", "video13.mp4", "video14.mp4"].map((v, i) => (
                  <MediaCard 
                   key={`video-h-${i}`} 
                   type="video" 
@@ -1032,7 +1032,7 @@ function Section3() {
           {/* Row 2: 3 x 9:16 videos (smaller scaled) */}
           <HorizontalScroll className="-mx-6 px-6 md:mx-0 md:px-0">
             <div className="flex gap-12">
-               {["/video15.mp4", "/video16.mp4", "/video17.mp4"].map((v, i) => (
+               {["video15.mp4", "video16.mp4", "video17.mp4"].map((v, i) => (
                  <MediaCard 
                   key={`video-v-${i}`} 
                   type="video" 
