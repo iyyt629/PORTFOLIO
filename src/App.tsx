@@ -569,7 +569,7 @@ function Section1() {
                     alt={`${item.title} ${i+1}`}
                     className="w-[calc((100%-48px)/2.5)] sm:w-[calc((100%-64px)/3.5)] md:w-[calc((100%-80px)/4.5)] flex-shrink-0 snap-start"
                     mediaContainerClassName="aspect-[9/16]"
-                    externalLink={item.img}
+                    externalLink={getAssetUrl(item.img)}
                   />
                 ))}
               </div>
@@ -606,7 +606,7 @@ function Section1() {
                     {video.images.map((img, imgIdx) => (
                       <div key={imgIdx} className={cn("rounded-lg overflow-hidden border border-slate-100", (video as any).imageAspectRatio || "aspect-video")}>
                         <img 
-                          src={img} 
+                          src={getAssetUrl(img)} 
                           alt="Supporting Visual" 
                           className={cn(
                             "w-full h-full",
@@ -973,7 +973,7 @@ function Section3() {
             <h4 className="text-slate-400 font-semibold mb-4 flex items-center gap-2">
               <span className="w-2 h-2 rounded-full bg-slate-300 block"></span>消费者认知
             </h4>
-            <p className="text-xl font-medium text-tencent-dark">当下主流的大屏（如55寸或65寸）已经足够大，为什么要更大的巨幕电视？</p>
+            <p className="text-xs font-medium text-tencent-dark">当下主流的大屏（如55寸或65寸）已经足够大，为什么要更大的巨幕电视？</p>
           </div>
           <div className="bento-card-blue p-8 flex flex-col justify-center">
             <h4 className="text-white/80 font-semibold mb-4 flex items-center gap-2">
