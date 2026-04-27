@@ -1,0 +1,103 @@
+@import "tailwindcss";
+
+@theme {
+  --color-tencent-blue: #0052D9;
+  --color-tencent-blue-hover: #003CAB;
+  --color-tencent-dark: #1D2129;
+  --color-tencent-gray: #94a3b8;
+  --color-tencent-bg-light: #F2F5F8;
+  --font-sans: "Inter", "PingFang SC", "Microsoft YaHei", -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+@keyframes title-breathe {
+  0%, 100% {
+    background-position: 0% 50%;
+    opacity: 1;
+    text-shadow: 0 0 15px rgba(0, 164, 255, 0);
+  }
+  50% {
+    background-position: 100% 50%;
+    opacity: 0.9;
+    text-shadow: 0 0 15px rgba(0, 164, 255, 0.3);
+  }
+}
+
+@keyframes blob {
+  0% {
+    transform: translate(0px, 0px) scale(1);
+  }
+  33% {
+    transform: translate(30px, -50px) scale(1.1);
+  }
+  66% {
+    transform: translate(-20px, 20px) scale(0.9);
+  }
+  100% {
+    transform: translate(0px, 0px) scale(1);
+  }
+}
+
+@keyframes bounce-x {
+  0%, 100% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(3px);
+  }
+}
+
+@layer utilities {
+  .animate-blob {
+    animation: blob 10s infinite;
+  }
+  .animate-bounce-x {
+    animation: bounce-x 1s infinite;
+  }
+  .animation-delay-2000 {
+    animation-delay: 2s;
+  }
+  .animation-delay-4000 {
+    animation-delay: 4s;
+  }
+  .title-gradient-breathe {
+    background: linear-gradient(90deg, #0052D9, #00A4FF, #0052D9);
+    background-size: 200% auto;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+    animation: title-breathe 4s ease-in-out infinite;
+  }
+  .title-gradient-breathe-white {
+    background: linear-gradient(90deg, #ffffff, #93c5fd, #ffffff);
+    background-size: 200% auto;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+    animation: title-breathe 4s ease-in-out infinite;
+  }
+  .bento-card {
+    @apply bg-white/70 backdrop-blur-2xl rounded-3xl shadow-[0_8px_32px_rgba(0,82,217,0.05)] border border-white/60 relative overflow-hidden;
+  }
+  .bento-card-blue {
+    @apply bg-gradient-to-br from-[#0052D9] to-[#003CAB] text-white rounded-3xl shadow-[0_4px_24px_rgba(0,82,217,0.1)] relative overflow-hidden;
+  }
+  .glass-panel {
+    @apply bg-white/70 backdrop-blur-2xl rounded-3xl shadow-[0_8px_32px_rgba(0,82,217,0.05)] border border-white/60 relative overflow-hidden;
+  }
+  .glass-button {
+    @apply bg-white hover:bg-slate-50 border border-slate-200 text-tencent-dark shadow-sm transition-all;
+  }
+  .hide-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  .hide-scrollbar {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+  }
+}
+
+body {
+  @apply bg-[#F2F5F8] min-h-screen font-sans text-[#1D2129];
+}
